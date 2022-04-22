@@ -88,10 +88,9 @@ public class HotelWebappTest {
 			}
 		}
 		System.out.println(result);
-		 
-		
+
 		HotelMethods.listeTableau(driver);
-		
+
 		Scanner sc = new Scanner(new File("src/main/resources/london.csv"));
 		List<String> fileCSV = new ArrayList<>();
 		while (sc.hasNext())// returns a boolean value
@@ -103,9 +102,9 @@ public class HotelWebappTest {
 		boolean boolval = result.equals(fileCSV);
 		assertTrue(boolval);
 		System.out.println("Lists are equal :" + boolval);
-	
+
 	}
-	
+
 	@Test
 
 	public void run2() throws Exception {
@@ -146,6 +145,6 @@ public class HotelWebappTest {
 		boolean boolval = result.equals(fileCSV);
 		assertTrue(boolval);
 		System.out.println("Lists are equal :" + boolval);
-	
+
 	}
 }
